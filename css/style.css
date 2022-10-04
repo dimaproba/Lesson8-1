@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+   font-family: lato, sans-serif;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   background-color: yellowgreen;
+}
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   background-color: rgba(82, 82, 150, 0.61);
+   text-align: center;
+   padding-bottom: 15px;
+}
+
+.block1{
+   background-color: aquamarine;
+   display: inline-block;
+   border: 3px solid red;
+   margin-top: 10px;
+   border-radius: 15%;
+   text-align: center;
+   padding: 10px;
+}
+.block2{
+   width: 30px;
+   height: 150px;
+   background-color: black;
+   margin: 0 585px;
+}
+.block3{
+   width: 250px;
+   height: 25px;
+   background-color: rgb(142, 6, 6);
+   margin: 0 585px;
+}
+.block4{
+   width: 20px;
+   height: 150px;
+   background-color: rgb(101, 187, 21);
+   margin-left: 810px;
+}
+.block5{
+   width: 255px;
+   height: 15px;
+   background-color: rgb(14, 230, 226);
+   margin-left: 810px;
+}
+.block2,
+.block3,
+.block4,
+.block5{
+   visibility: hidden;
+}
+.block1:hover + .block2{
+   visibility: visible;
+}
+.block2:hover, .block2:hover + .block3{
+   visibility: visible;
+}
+.block3:hover, .block3:hover + .block4{
+   visibility: visible;
+}
+.block4:hover, .block4:hover + .block5{
+   visibility: visible;
+}
+.block4:hover + .block5{
+   visibility: visible;
+}
+.block5:hover{
+   visibility: visible;
+}
